@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>The toto</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+    <form>
+        <label for="username"> username:</label><input type="text" id="username"><br/>
+        <label for="password">password:</label><input type="password" id="password">
+        <p id="message"></p>
+        <a href="#" onclick="verify()">login</a>
+        </form> 
+        <script>
+         function verify(){
+            var name=document.getElementById("username").value;
+            var pass=document.getElementById("password").value;
+             see(name,pass);
+             }
+            function see(x,y){
+                var n="bond";
+                var p="007";
+                if(n==x && y==p){
+                    document.getElementById("message").innerHTML="you are through";
+                }
+                else{
+                    document.getElementById("message").innerHTML="get out";
+                }
+                
+            }
+           
+        </script>    
+    </body>
+</html>
